@@ -28,13 +28,13 @@ gulp.task('build', function () {
 });
 
 gulp.task('sass', function() {
-  gulp.src('app/scss/app.scss')
+  gulp.src('src/scss/app.scss')
     .pipe(sass())
-    .pipe(gulp.dest('./app/css'));
+    .pipe(gulp.dest('./dist'));
 });
 
 gulp.task('watch', ['build', 'sass'], function() {
-  gulp.watch(['app/js/**/*.js', 'app/scss/**/*.scss'], ['build', 'sass']);
+  gulp.watch(['src/js/**/*.js', 'src/scss/**/*.scss'], ['build', 'sass']);
 });
 
 gulp.task('default', ['build', 'sass']);
