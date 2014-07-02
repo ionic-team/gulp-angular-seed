@@ -1,7 +1,7 @@
 Gulp Angular Seed
 =================
 
-A simple starting project for JS utilities that use Angular and want to build with Gulp
+A simple starting project for JS utilities that use Angular and want to build with Gulp. Supports minification and concatenation out of the box, with additional support for using Sass if you like.
 
 
 ### Instructions
