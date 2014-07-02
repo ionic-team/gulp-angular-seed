@@ -1,4 +1,4 @@
-gulp-angular-seed
+Gulp Angular Seed
 =================
 
 A simple starting project for JS utilities that use Angular and want to build with Gulp
