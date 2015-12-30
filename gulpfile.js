@@ -27,13 +27,13 @@ gulp.task('build', function () {
     .pipe(gulp.dest(buildConfig.dist));
 });
 
-gulp.task('sass', function() {
+gulp.task('sass', function () {
   gulp.src('src/scss/app.scss')
     .pipe(sass())
     .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('watch', ['build', 'sass'], function() {
+gulp.task('watch', ['build', 'sass'], function () {
   gulp.watch(['src/js/**/*.js', 'src/scss/**/*.scss'], ['build', 'sass']);
 });
 
